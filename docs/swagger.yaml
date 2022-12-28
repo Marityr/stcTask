@@ -1,0 +1,20 @@
+info:
+  contact: {}
+paths:
+  /api/v1/datalist/:
+    get:
+      consumes:
+      - application/json
+      description: Datalist
+      parameters:
+      - description: Key
+        in: query
+        name: key
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: Datalist
+      tags:
+      - datalist
+swagger: "2.0"

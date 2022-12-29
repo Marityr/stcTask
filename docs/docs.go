@@ -32,8 +32,8 @@ const docTemplate = `{
                 "parameters": [
                     {
                         "type": "string",
-                        "description": "Key",
-                        "name": "key",
+                        "description": "Num",
+                        "name": "num",
                         "in": "query"
                     }
                 ],

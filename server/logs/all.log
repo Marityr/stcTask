@@ -47,3 +47,140 @@
 {"file":"redis.go21","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T04:46:43+03:00"}
 {"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T04:46:43+03:00"}
 {"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T04:49:19+03:00"}
+{"file":"redis.go23","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T04:54:19+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T04:54:19+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T04:56:25+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-28T04:56:25+03:00"}
+{"file":"redis.go23","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T04:56:26+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T04:56:26+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T07:44:39+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-28T07:44:39+03:00"}
+{"file":"redis.go21","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T07:44:42+03:00"}
+{"file":"main.go28","func":"main.main()","level":"fatal","msg":"failed to initialize db: NOAUTH Authentication required.","time":"2022-12-28T07:44:42+03:00"}
+{"file":"redis.go21","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"dial tcp [::1]:6379: connect: connection refused","time":"2022-12-28T07:55:30+03:00"}
+{"file":"main.go28","func":"main.main()","level":"fatal","msg":"failed to initialize db: dial tcp [::1]:6379: connect: connection refused","time":"2022-12-28T07:55:30+03:00"}
+{"file":"redis.go21","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T13:22:44+03:00"}
+{"file":"main.go28","func":"main.main()","level":"fatal","msg":"failed to initialize db: NOAUTH Authentication required.","time":"2022-12-28T13:22:44+03:00"}
+{"file":"redis.go21","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T13:34:13+03:00"}
+{"file":"main.go28","func":"main.main()","level":"fatal","msg":"failed to initialize db: NOAUTH Authentication required.","time":"2022-12-28T13:34:13+03:00"}
+{"file":"redis.go24","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T13:40:28+03:00"}
+{"file":"main.go28","func":"main.main()","level":"fatal","msg":"failed to initialize db: NOAUTH Authentication required.","time":"2022-12-28T13:40:28+03:00"}
+{"file":"redis.go24","func":"stcTask/server/pkg/repository.NewRedisDB()","level":"info","msg":"NOAUTH Authentication required.","time":"2022-12-28T13:41:09+03:00"}
+{"file":"main.go28","func":"main.main()","level":"fatal","msg":"failed to initialize db: NOAUTH Authentication required.","time":"2022-12-28T13:41:09+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T13:41:54+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T13:42:39+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T13:42:41+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T13:43:32+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-28T13:43:32+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T13:43:33+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T13:44:10+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-28T13:44:10+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T13:44:11+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T13:44:53+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-28T13:44:53+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T13:44:54+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T13:46:10+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-28T13:46:10+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-28T13:46:11+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-28T13:51:01+03:00"}
+{"{"file":"main.go28","func":"main.main()","level":"fatal","msg":"failed to initialize db: sql: unknown driver \"sqlite3\" (forgotten import?)","time":"2022-12-29T02:13:15+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:18:31+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:18:46+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:18:46+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:18:48+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:19:11+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:19:11+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:19:12+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:53:08+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:53:08+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:53:12+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:53:34+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:53:34+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:53:36+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:53:49+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:53:49+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:53:56+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:54:44+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:54:44+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:54:45+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:55:04+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:55:04+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:57:33+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T02:58:18+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T02:58:18+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T02:58:20+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T03:28:49+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T03:28:49+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T03:28:50+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T03:29:29+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T03:31:58+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T03:31:58+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T03:32:00+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T03:32:36+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T03:34:52+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T03:34:53+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T03:36:28+03:00"}
+{"file":"main.go52","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-29T03:36:49+03:00"}
+{"file":"main.go42","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-29T03:36:49+03:00"}
+{"file":"main.go46","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T03:36:51+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-29T23:18:53+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T00:00:21+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T00:00:21+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:00:40+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:01:16+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:05:00+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:06:30+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:06:42+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:14:18+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:15:09+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:15:23+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T00:15:35+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T00:15:35+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:15:37+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T00:15:38+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:15:49+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T00:30:53+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T00:30:53+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T00:30:57+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:01:40+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:01:40+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:01:42+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:01:54+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:01:54+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:01:57+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:02:35+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:02:35+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:02:37+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:02:48+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:02:48+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:02:50+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:10:23+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:10:23+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:10:25+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:10:39+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:10:39+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:10:44+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:15:03+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:16:04+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:20:26+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:20:26+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:20:53+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:22:18+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:22:18+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:22:20+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:22:39+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:22:39+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:22:40+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:23:01+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:23:01+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:23:29+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:23:47+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:23:47+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:23:51+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:25:37+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:25:37+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:25:39+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:26:35+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T01:26:35+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T01:26:37+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T01:28:41+03:00"}

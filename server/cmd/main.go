@@ -23,10 +23,11 @@ func main() {
 		logrus.Fatal(err)
 	}
 
-	db, err := repository.NewRedisDB(viper.GetViper())
+	db, err := repository.NewSqlliteDB()
 	if err != nil {
 		logger.Fatalf("failed to initialize db: %s", err.Error())
 	}
+	defer db.Close()
 
 	repos := repository.NewReposiroty(db)
 	services := service.NewService(repos)

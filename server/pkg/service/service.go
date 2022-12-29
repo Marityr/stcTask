@@ -1,11 +1,14 @@
 package service
 
-import "stcTask/server/pkg/repository"
+import (
+	"stcTask/server/pkg/repository"
+	"stcTask/server/shemes"
+)
 
 //go:generate mockgen -source=service.go -destination=mocks/mock.go
 
 type DataList interface {
-	GetKey(key string) (string, error)
+	GetKey(num int) ([]shemes.QuizesAnswer, error)
 }
 
 type Service struct {

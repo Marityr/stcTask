@@ -7,9 +7,9 @@ paths:
       - application/json
       description: Datalist
       parameters:
-      - description: Key
+      - description: Num
         in: query
-        name: key
+        name: num
         type: string
       produces:
       - application/json

@@ -1,7 +1,10 @@
 package handler
 
 import (
+	"errors"
+	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -12,17 +15,40 @@ import (
 // @Tags     datalist
 // @Accept   json
 // @Produce  json
-// @Param    key  query  string  false  "Key"
+// @Param    num  query  string  false  "Num"
 // @Router   /api/v1/datalist/ [get]
 func (h *Handler) DataList(c *gin.Context) {
-	data := c.Param("key")
+	data := c.Query("num")
 
-	lists, err := h.services.DataList.GetKey(data)
+	num, err := strconv.Atoi(data)
 	if err != nil {
-		// h.logging.Error(err)
-		c.AbortWithError(400, err)
+		log.Println(err)
+		c.JSON(406, gin.H{
+			"data":  "",
+			"error": err,
+		})
+		return
+	}
+	if num > 990 {
+		log.Println(errors.New("fetch limit exceeded, no more than 990 records at a time"))
+		c.JSON(406, gin.H{
+			"data":  "",
+			"error": "fetch limit exceeded, no more than 990 records at a time",
+		})
+		return
+	}
+	lists, err := h.services.DataList.GetKey(num)
+	if err != nil {
+		log.Println(err)
+		c.JSON(406, gin.H{
+			"data":  "",
+			"error": err,
+		})
 		return
 	}
 
-	c.JSON(http.StatusOK, lists)
+	c.JSON(http.StatusOK, gin.H{
+		"data":  lists,
+		"error": "",
+	})
 }

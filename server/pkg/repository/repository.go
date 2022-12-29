@@ -1,17 +1,20 @@
 package repository
 
-import "github.com/go-redis/redis"
+import (
+	"database/sql"
+	"stcTask/server/shemes"
+)
 
 type DataList interface {
-	GetKey(key string) (string, error)
+	GetKey(num int) ([]shemes.QuizesAnswer, error)
 }
 
 type Repository struct {
 	DataList
 }
 
-func NewReposiroty(db *redis.Client) *Repository {
+func NewReposiroty(db *sql.DB) *Repository {
 	return &Repository{
-		DataList: NewDataListRedis(db),
+		DataList: NewDataListSqlite(db),
 	}
 }

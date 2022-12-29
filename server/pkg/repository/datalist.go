@@ -1,25 +1,42 @@
 package repository
 
 import (
+	"database/sql"
 	"log"
-
-	"github.com/go-redis/redis"
+	"stcTask/server/shemes"
 )
 
-type DataListRedis struct {
-	client *redis.Client
+type DataListSqlite struct {
+	db *sql.DB
 }
 
-func NewDataListRedis(db *redis.Client) *DataListRedis {
-	return &DataListRedis{client: db}
+func NewDataListSqlite(db *sql.DB) *DataListSqlite {
+	return &DataListSqlite{db: db}
 }
 
-func (dl *DataListRedis) GetKey(key string) (string, error) {
-	val, err := dl.client.Get("name").Result()
+func (dl *DataListSqlite) GetKey(num int) ([]shemes.QuizesAnswer, error) {
+	var sliseQuiz []shemes.QuizesAnswer
+	var quisTmp shemes.QuizesAnswer
+
+	rows, err := dl.db.Query("SELECT id, text, value_answer, COALESCE(cause, ''), created, question_id FROM quizes_answer")
 	if err != nil {
-		return "", err
+		log.Println(err)
+		return sliseQuiz, err
 	}
-	log.Println("###############")
-	log.Println(val)
-	return val, nil
+	for rows.Next() {
+		if num == 0 {
+			break
+		}
+		num--
+
+		err = rows.Scan(&quisTmp.Id, &quisTmp.Text, &quisTmp.ValueAnswer, &quisTmp.Cause, &quisTmp.Created, &quisTmp.QuestionID)
+		if err != nil {
+			log.Println(err)
+			return sliseQuiz, err
+		}
+		sliseQuiz = append(sliseQuiz, quisTmp)
+
+	}
+
+	return sliseQuiz, nil
 }

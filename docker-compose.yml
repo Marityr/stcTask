@@ -16,8 +16,8 @@ services:
     build: ./client
     container_name: web-client
     environment:
-      NUM: "1"
-      COUNT: "1"
+      NUM: "2"
+      COUNT: "3"
     restart: always
     networks:
       - net

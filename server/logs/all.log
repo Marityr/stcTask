@@ -213,3 +213,6 @@
 {"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T03:14:30+03:00"}
 {"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T03:14:30+03:00"}
 {"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T03:40:54+03:00"}
+{"file":"main.go47","func":"main.runHttp()","level":"info","msg":"stcTask Started","time":"2022-12-30T05:28:22+03:00"}
+{"file":"main.go53","func":"main.runHttp()","level":"info","msg":"stcTask Shutting Down","time":"2022-12-30T05:39:48+03:00"}
+{"file":"main.go43","func":"main.runHttp.func1()","level":"fatal","msg":"error occured while running http server: http: Server closed","time":"2022-12-30T05:39:48+03:00"}

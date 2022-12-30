@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"server/pkg/logging"
 	"server/pkg/service"
 	"time"
 
@@ -14,7 +13,6 @@ import (
 
 type Handler struct {
 	services *service.Service
-	logging  *logging.Logger
 }
 
 func NewHandler(services *service.Service) *Handler {

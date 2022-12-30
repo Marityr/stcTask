@@ -20,22 +20,12 @@ import (
 func (h *Handler) DataList(c *gin.Context) {
 	data := c.Query("num")
 
-	num, err := strconv.Atoi(data)
+	num, err := ValidateQueryParam(data)
 	if err != nil {
 		log.Println(err)
 		c.JSON(406, gin.H{
 			"data":  "",
 			"error": err,
-		})
-		return
-	}
-
-	// TIPS query limit sqlite3 <1000
-	if num > 990 {
-		log.Println(errors.New("fetch limit exceeded, no more than 990 records at a time"))
-		c.JSON(406, gin.H{
-			"data":  "",
-			"error": "fetch limit exceeded, no more than 990 records at a time",
 		})
 		return
 	}
@@ -54,4 +44,19 @@ func (h *Handler) DataList(c *gin.Context) {
 		"data":  lists,
 		"error": "",
 	})
+}
+
+func ValidateQueryParam(data string) (int, error) {
+	num, err := strconv.Atoi(data)
+	if err != nil {
+		return 0, err
+	}
+
+	// TIPS query limit sqlite3 <1000
+	if num > 990 {
+		log.Println(errors.New("fetch limit exceeded, no more than 990 records at a time"))
+		return 0, errors.New("fetch limit exceeded, no more than 990 records at a time")
+	}
+
+	return num, nil
 }

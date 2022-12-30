@@ -16,7 +16,8 @@ services:
     build: ./client
     container_name: web-client
     environment:
-      PORT: "8090"
+      NUM: "1"
+      COUNT: "1"
     restart: always
     networks:
       - net

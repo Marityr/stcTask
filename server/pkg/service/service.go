@@ -1,8 +1,8 @@
 package service
 
 import (
-	"stcTask/server/pkg/repository"
-	"stcTask/server/shemes"
+	"server/pkg/repository"
+	"server/shemes"
 )
 
 //go:generate mockgen -source=service.go -destination=mocks/mock.go

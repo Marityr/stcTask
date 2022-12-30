@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"stcTask/server/pkg/logging"
+	"server/pkg/logging"
 
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"

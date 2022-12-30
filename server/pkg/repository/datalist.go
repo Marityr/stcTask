@@ -3,7 +3,7 @@ package repository
 import (
 	"database/sql"
 	"log"
-	"stcTask/server/shemes"
+	"server/shemes"
 )
 
 type DataListSqlite struct {

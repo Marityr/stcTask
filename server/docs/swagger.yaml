@@ -10,7 +10,7 @@ paths:
       - description: Num
         in: query
         name: num
-        type: string
+        type: integer
       produces:
       - application/json
       responses: {}

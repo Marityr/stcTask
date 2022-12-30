@@ -1,12 +1,13 @@
-build:
-	rm -rf build && mkdir build && go build -o build/app_bonus -v cmd/main.go
+.PHONY: srart
+start:
+	docker-compose build && docker-compose up
   
 run:
-	go run server/cmd/main.go /server
+	cd server/ && go run cmd/main.go
 
 .PHONY: sw
 sw:
-	swag init -g server/cmd/main.go
+	cd server/ && swag init -g cmd/main.go
 
 test:
 	go test

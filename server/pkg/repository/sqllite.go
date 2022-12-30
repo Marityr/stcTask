@@ -3,7 +3,7 @@ package repository
 import (
 	"database/sql"
 	"log"
-	"stcTask/server/shemes"
+	"server/shemes"
 	"sync"
 
 	_ "github.com/mattn/go-sqlite3"
@@ -12,22 +12,23 @@ import (
 func NewSqlliteDB() (*sql.DB, error) {
 	var once sync.Once
 
-	db, err := sql.Open("sqlite3", ":memory:")
+	DB, err := sql.Open("sqlite3", "file::memory:?cache=shared")
 	if err != nil {
 		log.Fatalf("cannot open an SQLite memory database: %v", err)
+		return DB, err
 	}
 
 	onse := func() {
 		createTableSQL := `CREATE TABLE "quizes_answer" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "text" varchar(200) NOT NULL, "value_answer" varchar(200) NOT NULL, "cause" varchar(200) NULL, "created" datetime NOT NULL, "question_id" integer NOT NULL);`
 		log.Println("Create table...")
-		statement, err := db.Prepare(createTableSQL) // Prepare SQL Statement
+		statement, err := DB.Prepare(createTableSQL)
 		if err != nil {
 			log.Fatal(err.Error())
 		}
-		statement.Exec() // Execute SQL Statements
+		statement.Exec()
 		log.Println("table created")
 
-		err = RewriteDB(db)
+		err = RewriteDB(DB)
 		if err != nil {
 			log.Fatalf("not old")
 		}
@@ -35,17 +36,18 @@ func NewSqlliteDB() (*sql.DB, error) {
 
 	go once.Do(onse)
 
-	return db, nil
+	return DB, nil
 }
 
 func RewriteDB(db *sql.DB) error {
 	var sliseQuiz []shemes.QuizesAnswer
 	var quisTmp shemes.QuizesAnswer
-	oldDB, err := sql.Open("sqlite3", "server/db.sqlite3")
+	oldDB, err := sql.Open("sqlite3", "db.sqlite3")
 	if err != nil {
 		log.Fatalf("cannot open an SQLite memory database: %v", err)
 		return err
 	}
+	defer oldDB.Close()
 
 	rows, err := oldDB.Query("SELECT id, text, value_answer, COALESCE(cause, ''), created, question_id FROM quizes_answer")
 	if err != nil {
@@ -62,9 +64,8 @@ func RewriteDB(db *sql.DB) error {
 	}
 
 	for _, data := range sliseQuiz {
-		insertStudentSQL := `INSERT INTO quizes_answer(id, text, value_answer, cause, created, question_id) VALUES (?, ?, ?, ?, ?, ?)`
-		statement, err := db.Prepare(insertStudentSQL) // Prepare statement.
-		// This is good to avoid SQL injections
+		insertSQL := `INSERT INTO quizes_answer(id, text, value_answer, cause, created, question_id) VALUES (?, ?, ?, ?, ?, ?)`
+		statement, err := db.Prepare(insertSQL)
 		if err != nil {
 			log.Fatalln(err.Error())
 		}
@@ -73,7 +74,6 @@ func RewriteDB(db *sql.DB) error {
 			log.Fatalln(err.Error())
 		}
 	}
-
 	log.Println("rewrite end")
 	return nil
 }

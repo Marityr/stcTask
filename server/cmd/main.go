@@ -4,12 +4,12 @@ import (
 	"context"
 	"os"
 	"os/signal"
-	"stcTask/docs"
-	"stcTask/server"
-	"stcTask/server/pkg/handler"
-	"stcTask/server/pkg/logging"
-	"stcTask/server/pkg/repository"
-	"stcTask/server/pkg/service"
+	"server"
+	"server/docs"
+	"server/pkg/handler"
+	"server/pkg/logging"
+	"server/pkg/repository"
+	"server/pkg/service"
 	"syscall"
 
 	"github.com/sirupsen/logrus"
@@ -58,7 +58,7 @@ func runHttp(srv *server.Server, handler *handler.Handler, logger logging.Logger
 }
 
 func initConfig() error {
-	viper.AddConfigPath("server/configs")
+	viper.AddConfigPath("configs")
 	viper.SetConfigName("config")
 	return viper.ReadInConfig()
 }

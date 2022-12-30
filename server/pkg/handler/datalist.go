@@ -15,7 +15,7 @@ import (
 // @Tags     datalist
 // @Accept   json
 // @Produce  json
-// @Param    num  query  string  false  "Num"
+// @Param    num  query  int  false  "Num"
 // @Router   /api/v1/datalist/ [get]
 func (h *Handler) DataList(c *gin.Context) {
 	data := c.Query("num")
@@ -29,6 +29,8 @@ func (h *Handler) DataList(c *gin.Context) {
 		})
 		return
 	}
+
+	// TIPS query limit sqlite3 <1000
 	if num > 990 {
 		log.Println(errors.New("fetch limit exceeded, no more than 990 records at a time"))
 		c.JSON(406, gin.H{
@@ -37,10 +39,11 @@ func (h *Handler) DataList(c *gin.Context) {
 		})
 		return
 	}
+
 	lists, err := h.services.DataList.GetKey(num)
 	if err != nil {
 		log.Println(err)
-		c.JSON(406, gin.H{
+		c.JSON(400, gin.H{
 			"data":  "",
 			"error": err,
 		})

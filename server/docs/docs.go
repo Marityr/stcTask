@@ -31,7 +31,7 @@ const docTemplate = `{
                 "summary": "Datalist",
                 "parameters": [
                     {
-                        "type": "string",
+                        "type": "integer",
                         "description": "Num",
                         "name": "num",
                         "in": "query"

@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"stcTask/server/pkg/logging"
-	"stcTask/server/pkg/service"
+	"server/pkg/logging"
+	"server/pkg/service"
 	"time"
 
 	"github.com/gin-contrib/cors"

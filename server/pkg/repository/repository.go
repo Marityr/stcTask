@@ -2,7 +2,7 @@ package repository
 
 import (
 	"database/sql"
-	"stcTask/server/shemes"
+	"server/shemes"
 )
 
 type DataList interface {
